@@ -2,6 +2,8 @@ import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
+# python3 -m smtpd -n -c DebuggingServer localhost:1025
+
 msg = MIMEMultipart()
 msg['From'] = 'me@gmail.com'
 msg['To'] = 'you@gmail.com'
